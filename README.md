@@ -21,7 +21,7 @@ Objetivo: Criação de uma API Rest para que a equipe de front-end realize as co
 
 ### Fase 03 - Testes
 
-• Classes de teste referente aos recursos;
+• Classes de teste referente aos recursos: Categoria e Livro;
 
 ### Fase 04 - Documentação
 
