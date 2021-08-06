@@ -1,8 +1,9 @@
 ------ CATEGORIA --------
 
-INSERT INTO bookstore.categoria (nome, descricao) VALUES ('Informática', 'Livros de TI');
+INSERT INTO bookstore.categoria (nome, descricao) VALUES ('Informatica', 'Livros de TI');
 INSERT INTO bookstore.categoria (nome, descricao) VALUES ('Psicologia', 'Livros de Psicologia');
 INSERT INTO bookstore.categoria (nome, descricao) VALUES ('Veterinaria', 'Livros de Veterinaria');
+INSERT INTO bookstore.categoria (nome, descricao) VALUES ('Administracao', 'Livros de Administracao');
 
 ------ LIVRO --------
 

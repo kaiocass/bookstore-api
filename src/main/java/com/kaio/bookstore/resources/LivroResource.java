@@ -89,7 +89,7 @@ public class LivroResource {
 	@ApiResponses(value = { 
 			@ApiResponse(code = 200, message = "Sucesso", response = Livro.class) })
 	@PatchMapping(value = "/{id}")
-	public ResponseEntity<Livro> updatePatch(@PathVariable Integer id, @Valid @RequestBody Livro livro) {
+	public ResponseEntity<Livro> updatePatch(@PathVariable Integer id, @RequestBody Livro livro) {
 		Livro novoLivro = livroService.update(id, livro);
 		return ResponseEntity.ok().body(novoLivro);
 	}

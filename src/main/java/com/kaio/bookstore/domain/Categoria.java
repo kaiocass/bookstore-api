@@ -14,6 +14,8 @@ import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.validator.constraints.Length;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -40,6 +42,7 @@ public class Categoria implements Serializable {
 	@Length(min = 3, max = 200, message = "O campo Descrição deve ter entre 3 e 200 caracteres")
 	private String descricao;
 	
+	@JsonIgnore
 	@Builder.Default
 	@OneToMany(mappedBy = "categoria")
 	private List<Livro> livros = new ArrayList<>();

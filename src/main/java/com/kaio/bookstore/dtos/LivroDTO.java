@@ -5,12 +5,10 @@ import java.io.Serializable;
 import com.kaio.bookstore.domain.Livro;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Builder
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
 public class LivroDTO implements Serializable{

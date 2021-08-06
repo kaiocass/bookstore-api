@@ -25,7 +25,7 @@ public class CategoriaService {
 	public Categoria findById(Integer id) {
 		Optional<Categoria> categoria = this.categoriaRepository.findById(id);
 		return categoria.orElseThrow(() -> new ObjectNotFoundException(
-				"Objeto não encontrado! Id: " + id + " e Tipo: " +  Categoria.class.getName()));
+				"Objeto nao encontrado! Id: " + id + " e Tipo: " +  Categoria.class.getName()));
 	}
 
 	public Categoria create(Categoria categoria) {
@@ -51,7 +51,7 @@ public class CategoriaService {
 			this.categoriaRepository.deleteById(id);
 		} catch (DataIntegrityViolationException e) {
 			throw new com.kaio.bookstore.service.exceptions.DataIntegrityViolationException(
-					"Categoria não pode ser deletada! Possui livros associados");
+					"Categoria nao pode ser deletada! Possui livros associados");
 		}
 	}
 }

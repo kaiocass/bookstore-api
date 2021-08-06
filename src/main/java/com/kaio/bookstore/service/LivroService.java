@@ -28,7 +28,7 @@ public class LivroService {
 	public Livro findById(Integer id) {
 		Optional<Livro> livro = this.livroRepository.findById(id);
 		return livro.orElseThrow(() -> new ObjectNotFoundException(
-				"Objeto não encontrado! Id: " + id + " e Tipo: " +  Livro.class.getName()));
+				"Objeto nao encontrado! Id: " + id + " e Tipo: " +  Livro.class.getName()));
 	}
 	
 	public Livro update(Integer id, Livro livro) {
